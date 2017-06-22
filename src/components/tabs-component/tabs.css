@@ -1,0 +1,50 @@
+.tabs {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif
+}
+
+.tabs__tab {
+  list-style-type: none;
+  margin: 100px auto 10px auto;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tabs__tab__li {
+  display: inline-flex;
+}
+
+.tabs__tab__li a {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+}
+
+.tabs__tab__li_a_active {
+  background-color: #ccc;
+}
+
+.tabs__tab__li:hover {
+  background-color: #ddd;
+}
+
+.tab_content {
+  padding: 10px 15px;
+}
+
+.tab_content__city_description {
+  line-height: 25px;
+}
+
+.tab_content__city_title {
+  font-size: 24px;
+}
