@@ -3,7 +3,6 @@ import _ from 'lodash';
 
 import './tabs.css';
 
-import Pane from './pane';
 import Tabs from './tabs-inner';
 
 const dataTabs = [
@@ -32,14 +31,14 @@ export default class TabsV2 extends Component {
 
 		_.map(dataTabs, (item) => {
 			data.push(
-				<Pane label={item.title} key={item.tabId}>
-					<h3 className="tab_content__city_title">
+				<div label={item.title} key={item.tabId}>
+					<h3 className='tab_content__city_title'>
 						{item.title}
 					</h3>
-					<p className="tab_content__city_description">
+					<p className='tab_content__city_description'>
 						{item.text}
 					</p>
-				</Pane>);
+				</div>);
 		});
 
 		return (
@@ -49,5 +48,6 @@ export default class TabsV2 extends Component {
 		);
 	}
 }
+
 
 
