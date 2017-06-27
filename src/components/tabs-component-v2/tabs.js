@@ -23,7 +23,7 @@ const dataTabs = [
 	}
 ];
 
-export default class TabsV2 extends Component {
+export class TabsV2 extends Component {
 
 	render() {
 
@@ -42,7 +42,7 @@ export default class TabsV2 extends Component {
 		});
 
 		return (
-			<Tabs selected={0}>
+			<Tabs>
 				{data}
 			</Tabs>
 		);

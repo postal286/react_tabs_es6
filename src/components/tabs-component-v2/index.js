@@ -1,1 +1,1 @@
-// export { TabsV2 as default } from './tabs';
+export { TabsV2 as default } from './tabs';

@@ -7,8 +7,12 @@ export default class Tabs extends Component {
 		super(props);
 
 		this.state = {
-			selected: props.selected
+			selected: 0
 		};
+	}
+
+	shouldComponentUpdate(nextProps, nextState) {
+		return this.props !== nextProps || this.state.selected !== nextState.selected;
 	}
 
 	handleClick = (index, event) => {
@@ -56,8 +60,4 @@ export default class Tabs extends Component {
 			</div>
 		);
 	}
-};
-
-Tabs.defaultProps = {
-	selected: 0
-};
+}
